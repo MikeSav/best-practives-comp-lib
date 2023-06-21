@@ -1,0 +1,20 @@
+<div class="genre-charts">
+  <div class="genre-charts__heading">
+    <h2>Mike's Favourite Genres</h2>
+  </div>
+  <div class="genre-charts__cards">
+    <div class="genre-charts__cards__card" *ngFor="let genre of genres; trackBy: trackByFn">
+      <div class="genre-charts__cards__card__chart">
+        <sio-donut-chart
+          [percentage]="genre.percentage"
+          [borderWidth]="'10px'"
+          type="success"
+          [rounded]="true"
+          [animate]="true"></sio-donut-chart>
+      </div>
+      <div class="genre-charts__cards__card__label">
+        {{ genre.genre }}
+      </div>
+    </div>
+  </div>
+</div>

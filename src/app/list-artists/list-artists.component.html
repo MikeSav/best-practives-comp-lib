@@ -1,0 +1,14 @@
+<div class="artists">
+  <div class="artists__heading">
+    <h2>All Artists</h2>
+  </div>
+  <div class="artists__list">
+    <sio-chip *ngFor="let artist of artistList;trackBy: trackByFn"
+              [label]="artist.artist"
+              [hideIcon]="true"
+              [addSpacing]="true"
+              chipType="status"
+              [chipStyle]="artist.chipColour">
+    </sio-chip>
+  </div>
+</div>

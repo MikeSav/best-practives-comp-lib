@@ -1,0 +1,29 @@
+.genre-charts {
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    margin: 1rem 0;
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+
+      &__chart {
+        text-align: center;
+      }
+
+      &__label {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

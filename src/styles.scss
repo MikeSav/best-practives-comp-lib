@@ -1,1 +1,289 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@safetyio/ng-ui-components/sio-common.scss';
+
+:root {
+  --sio-grey: #404040;
+  --sio-bad-yellow: #F1C40F;
+  --sio-nice-yellow: #FFEB3B;
+  --sio-pale-blue: #DAFFFC;
+  --sio-light-pink: #FFB6C1;
+  --sio-red: rgb(228, 35, 38);
+  --sio-light-grey-text: #959595;
+  --sio-light-grey-background: #c2c2c2;
+  --sio-separator: rgba(255, 255, 255, .15);
+  --sio-green: rgb(0, 149, 52);
+  --sio-very-dark-grey: #2D292D;
+  --intro-gradient-start: rgba(78, 181, 114, 1);
+  --intro-gradient-end: rgba(0, 149, 52, 1);
+  --bungee: 'Bungee Shade'
+}
+
+/* fonts */
+/* bungee-shade-regular - latin */
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('./assets/fonts/bungee-shade-v11-latin-regular.woff2') format('woff2') /* Super Modern Browsers */
+}
+
+/* MSA FONT */
+
+@font-face {
+  font-family: 'msa';
+  src: url('./assets/fonts/msa_45d928bcc7e0fc59d7170dc690b28c3c.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  content: attr(data-icon);
+}
+
+[data-icon]:before,
+.msa-STEL:before,
+.msa-TWA:before,
+.msa-add:before,
+.msa-alarm:before,
+.msa-alert:before,
+.msa-arrow_circle_right:before,
+.msa-arrow_left:before,
+.msa-arrow_right:before,
+.msa-battery-4-alarm,
+.msa-battery-4-full:before,
+.msa-battery-powered-2x:before,
+.msa-battery-4-warning
+.msa-brightness:before,
+.msa-calendar:before,
+.msa-calibrate:before,
+.msa-check-in-no-response:before,
+.msa-close:before,
+.msa-device:before,
+.msa-disabled:before,
+.msa-documents:before,
+.msa-flow-test:before,
+.msa-folder:before,
+.msa-get_out:before,
+.msa-group:before,
+.msa-health:before,
+.msa-high_value:before,
+.msa-home:before,
+.msa-incidentsHistory:before,
+.msa-language:before,
+.msa-liveData:before,
+.msa-location:before,
+.msa-low_value:before,
+.msa-person:before,
+.msa-phone:before,
+.msa-power:before,
+.msa-pulse_check:before,
+.msa-security:before,
+.msa-settings:before,
+.msa-success:before,
+.msa-unknown:before,
+.msa-volume_level:before,
+.msa-waiting:before {
+  display: inline-block;
+  font-family: "msa";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.msa-STEL:before {
+  content: '\f10d';
+}
+.msa-TWA:before {
+  content: '\f10f';
+}
+.msa-add:before {
+  content: '\f114';
+}
+.msa-alarm:before {
+  content: '\f117';
+}
+.msa-alert:before {
+  content: '\f11a';
+}
+.msa-arrow_circle_right:before {
+  content: '\f11c';
+}
+.msa-arrow_left:before {
+  content: '\f11d';
+}
+.msa-arrow_right:before {
+  content: '\f11e';
+}
+.msa-battery-4-alarm:before {
+  content: '\f12b';
+}
+.msa-battery-4-full:before {
+  content: '\f12c';
+}
+.msa-battery-powered-2x:before {
+  content: '\f12e';
+}
+.msa-battery-4-warning:before {
+  content: '\f12d';
+}
+.msa-brightness:before {
+  content: '\f130';
+}
+.msa-calendar:before {
+  content: '\f137';
+}
+.msa-calibrate:before {
+  content: '\f13a';
+}
+.msa-check-in-no-response:before {
+  content: '\f13b';
+}
+.msa-close:before {
+  content: '\f13d';
+}
+.msa-device:before {
+  content: '\f152';
+}
+.msa-disabled:before {
+  content: '\f153';
+}
+.msa-documents:before {
+  content: '\f156';
+}
+.msa-flow-test:before {
+  content: '\f168';
+}
+.msa-folder:before {
+  content: '\f169';
+}
+.msa-get_out:before {
+  content: '\f16e';
+}
+.msa-group:before {
+  content: '\f16f';
+}
+.msa-health:before {
+  content: '\f174';
+}
+.msa-high_value:before {
+  content: '\f176';
+}
+.msa-home:before {
+  content: '\f177';
+}
+.msa-incidentsHistory:before {
+  content: '\f182';
+}
+.msa-language:before {
+  content: '\f18d';
+}
+.msa-liveData:before {
+  content: '\f190';
+}
+.msa-location:before {
+  content: '\f193';
+}
+.msa-low_value:before {
+  content: '\f196';
+}
+.msa-person:before {
+  content: '\f1b8';
+}
+.msa-phone:before {
+  content: '\f1b9';
+}
+.msa-power:before {
+  content: '\f1c2';
+}
+.msa-pulse_check:before {
+  content: '\f1c6';
+}
+.msa-security:before {
+  content: '\f1d9';
+}
+.msa-settings:before {
+  content: '\f1db';
+}
+.msa-success:before {
+  content: '\f1e0';
+}
+.msa-unknown:before {
+  content: '\f1eb';
+}
+.msa-volume_level:before {
+  content: '\f1ed';
+}
+.msa-waiting:before {
+  content: '\f1ee';
+}
+
+/* target html */
+body {
+  margin: 0;
+  // background: no-repeat fixed linear-gradient(180deg, var(--intro-gradient-start) 0%, var(--intro-gradient-end) 100%);
+  color: var(--sio-very-dark-grey);
+  font-family: monospace;
+
+  /* experiment */
+  background: linear-gradient(-60deg,
+    var(--sio-green-10) 0% 15%,
+    var(--sio-green-10) 15% 25%,
+    var(--sio-green-05) 25% 30%,
+    var(--sio-green-10) 30% 60%,
+    var(--sio-green-05) 60% 65%,
+    var(--sio-green-10) 65% 90%,
+    var(--sio-green-05) 90%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+
+h1 {
+  color: var(--sio-very-dark-grey);
+  font-family: var(--bungee);
+  font-size: 3rem;
+  -webkit-font-smoothing: antialiased;
+  margin: 1rem 0;
+}
+
+h2 {
+  color: var(--sio-very-dark-grey);
+  font-family: var(--bungee);
+  font-size: 2rem;
+  -webkit-font-smoothing: antialiased;
+  margin: 2rem 0;
+}
+
+dialog {
+  border: 1px solid var(--sio-very-dark-grey);
+  padding: 1.6rem;
+  max-width: 80vw;
+  max-height: 80vh;
+
+  &::backdrop {
+    background-color: pink;
+  }
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "albums": [
+    {
+      "id": "ylt-heart",
+      "artist": "Yo La Tengo",
+      "title": "I Can Hear the Heart...",
+      "genre": "Alternative Rock",
+      "released": "1997"
+    },
+    {
+      "id": "mbv1",
+      "artist": "My Bloody Valentine",
+      "title": "Loveless",
+      "genre": "Alternative Rock",
+      "released": "1991"
+    },
+    {
+      "id": "twp-seamonsters",
+      "artist": "The Wedding Present",
+      "title": "Seamonsters",
+      "genre": "Alternative Rock",
+      "released": "1991"
+    },
+    {
+      "id": "kw-computerwelt",
+      "artist": "Kraftwerk",
+      "title": "Computerwelt",
+      "genre": "Krautrock",
+      "released": "1981"
+    },
+    {
+      "id": "sp-bollocks",
+      "artist": "Sex Pistols",
+      "title": "Nevermind the Bollocks, here's...",
+      "genre": "Punk",
+      "released": "1977"
+    },
+    {
+      "id": "sg-copper",
+      "artist": "Sugar",
+      "title": "Copper Blue",
+      "genre": "Alternative Rock",
+      "released": "1992"
+    },
+    {
+      "id": "03v0ei",
+      "artist": "Brian Eno",
+      "title": "Another Green World",
+      "genre": "Avant-pop",
+      "released": "1975"
+    },
+    {
+      "id": "9j40b",
+      "artist": "Brian Eno",
+      "title": "Before & After Science",
+      "genre": "Avant-pop",
+      "released": "1977"
+    },
+    {
+      "id": "9j40dd",
+      "artist": "Ramones",
+      "title": "Ramones",
+      "genre": "Punk",
+      "released": "1977"
+    },
+    {
+      "id": "9j40dl",
+      "artist": "Pixies",
+      "title": "Surfa Rosa",
+      "genre": "Alternative Rock",
+      "released": "1989"
+    },
+    {
+      "id": "9j40syl",
+      "artist": "Sonic Youth",
+      "title": "Goo",
+      "genre": "Alternative Rock",
+      "released": "1991"
+    },
+    {
+      "id": "9j40dl",
+      "artist": "The Beatles",
+      "title": "Rubber Soul",
+      "genre": "60's",
+      "released": "1965"
+    },
+    {
+      "id": "9j40dl",
+      "artist": "The Beatles",
+      "title": "Revolver",
+      "genre": "60's",
+      "released": "1966"
+    },
+    {
+      "id": "9j40dl3",
+      "artist": "The Fall",
+      "title": "Code Selfish",
+      "genre": "Alternative Rock",
+      "released": "1992"
+    },
+    {
+      "id": "9j40dl3L",
+      "artist": "The Fall",
+      "title": "Grotesque (After the Gramme)",
+      "genre": "Alternative Rock",
+      "released": "1980"
+    },
+    {
+      "id": "9j40dl3L",
+      "artist": "The Fall",
+      "title": "Fall Heads Roll",
+      "genre": "Alternative Rock",
+      "released": "1980"
+    }
+  ]
+}

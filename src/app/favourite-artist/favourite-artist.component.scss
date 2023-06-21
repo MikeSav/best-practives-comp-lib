@@ -1,0 +1,14 @@
+.favourite-artist {
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  &__result {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
